@@ -1,0 +1,20 @@
+{
+  "name": "js-algorithms-and-data-structures",
+  "version": "1.0.0",
+  "description": "Learning algorithms and data structures through the lens of JavaScript",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavesh-ittadwar/js-algorithms-and-data-structures.git"
+  },
+  "author": "bhavesh-ittadwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhavesh-ittadwar/js-algorithms-and-data-structures/issues"
+  },
+  "homepage": "https://github.com/bhavesh-ittadwar/js-algorithms-and-data-structures#readme"
+}
