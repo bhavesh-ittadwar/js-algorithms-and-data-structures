@@ -1,3 +1,3 @@
-import { linearSearch } from "./lib/search"
+const { linearSearch } = require("./lib/search")
 
-export { linearSearch }
+module.exports = { linearSearch }

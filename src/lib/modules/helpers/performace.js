@@ -12,4 +12,4 @@ const getPerformance = (callback, ...args) => {
   return `${timeElapsed} seconds`
 }
 
-export { getPerformance }
+module.exports = { getPerformance }
