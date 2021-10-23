@@ -1,15 +1,12 @@
-// getPerformance recieves a function and its parameters
-// and returns the time it took to execute the function in seconds
+/**
+ * 
+ * @param {*} startTime 
+ * @param {*} endTime 
+ * @returns calculated performance time in seconds
+ */
 
-const getPerformance = (callback, ...args) => {
-  let timeElapsed
-  let endTime
-  let startTime = performance.now()
-
-  callback(...args)
-  endTime = performance.now()
-  timeElapsed =  (endTime - startTime) / 1000
-  return `${timeElapsed} seconds`
+ const calculatePerformance = (startTime, endTime) => {
+  return (endTime - startTime) / 1000
 }
 
-module.exports = { getPerformance }
+module.exports = { calculatePerformance }
