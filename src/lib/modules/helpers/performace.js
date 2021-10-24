@@ -5,7 +5,7 @@
  * @returns calculated performance time in seconds
  */
 
- const calculatePerformance = (startTime, endTime) => {
+const calculatePerformance = (startTime, endTime) => {
   return (endTime - startTime) / 1000
 }
 

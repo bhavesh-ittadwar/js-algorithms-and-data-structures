@@ -6,9 +6,7 @@
  */
 
 const linearSearch = (arr, key) => {
-  for (let [index, value] of arr.entries()) {
-    if (value === key) return index
-  }
+  for (let [index, value] of arr.entries()) if (value === key) return index
   return -1
 }
 

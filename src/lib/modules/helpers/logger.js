@@ -9,4 +9,13 @@ const printLog = (input, result) => {
   console.log('Output: ', result)
 }
 
-module.exports = { printLog }
+/**
+ * 
+ * @param {*} timeElapsed 
+ */
+
+const printPerformanceResult = (timeElapsed) => {
+  console.log(`Performance: ${timeElapsed} seconds`)
+}
+
+module.exports = { printLog, printPerformanceResult }
