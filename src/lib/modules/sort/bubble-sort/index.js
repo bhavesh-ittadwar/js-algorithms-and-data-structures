@@ -1,4 +1,4 @@
 const { bubbleSort } = require("./lib/sort")
 const { executor } = require('../../helpers/executor')
 
-executor(true, true, bubbleSort, [12,23,21,33,2,4,45,3,434,2,3] )
+executor(true, true, bubbleSort, [1,44,2,3,4,5,6,7] )
