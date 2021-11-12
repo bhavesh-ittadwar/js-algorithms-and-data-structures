@@ -1,6 +1,6 @@
 const { performance } = require('perf_hooks');
 const { calculatePerformance } = require('./performace')
-const { printLog, printPerformanceResult } = require('./logger')
+const { printOutput, printInput, printPerformanceResult } = require('./logger')
 
 /**
  * 
@@ -17,6 +17,7 @@ const executor = (printLogs = false, printPerformance = false, callback, ...args
   let startTime
 
   if(printPerformance) startTime = performance.now()
+  if(printLogs) printInput(input)
 
   let result = callback(...args)
 
@@ -26,7 +27,7 @@ const executor = (printLogs = false, printPerformance = false, callback, ...args
     printPerformanceResult(timeElapsed)
   }
 
-  if(printLogs) printLog(input, result)
+  if(printLogs) printOutput(result)
 }
 
 module.exports = { executor }
